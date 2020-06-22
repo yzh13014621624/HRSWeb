@@ -1,0 +1,53 @@
+/*
+ * @description: table 样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-28 14:25:19
+ * @LastEditTime: 2019-06-13 15:00:17
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#table_report_form
+  .report_form_title
+    f13()
+    font-weight 700
+    color #333
+    tc()
+  .table_operate_wrapper
+    padding-top 10px
+    padding-bottom 20px
+    .ant-col
+      &:first-child
+        button
+          margin-left 20px
+      &:last-child
+        button
+          & + button
+            margin-left 10px
+        .txt
+          margin-left 4px
+
+  .ant-table-body
+    &::-webkit-scrollbar
+      display block
+      width 10px
+      height 10px
+      background rgba(204, 204, 204, 1)
+  .ant-table-body
+    &::-webkit-scrollbar-thumb
+      border-radius 4px
+  .custom-page-btn
+    margin-right 10px
+.ant-modal
+  h1
+    tc()
+  .tips_text
+    color #333
+    tc()
+    margin 0
+  .remove_button_wrapper
+    padding-top 46px
+    tc()
+  .table_modal_button_wrapper
+    padding-top 50px

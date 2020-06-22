@@ -1,0 +1,70 @@
+/*
+ * @description: 参保管理模块 - 个人参保 - 个人参保信息 - 详情样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-12 17:23:09
+ * @LastEditTime: 2019-07-30 10:16:15
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#personal_insured_info_detail
+  padding 10px 40px
+  .detail_content
+    &.ant-card-bordered
+      border none
+      bd-b(#d8d8d8)
+    .ant-card-body
+      padding 30px 0 20px 0
+    .detail_item
+      padding 10px 0
+      .ant-col
+        color #666
+        wb()
+        &:first-child
+          text-align right
+          color #333
+  .detail_title
+    padding-top 30px
+    padding-bottom 20px
+    font-weight 700
+    f14()
+    color #333
+    span
+      color #999
+      f12()
+      padding-left 10px
+  .table_content
+    .ant-card-body
+      padding 0
+    .table_header
+      color #333
+      font-weight 700
+      background-color #fafafa
+      padding-top 20px
+      padding-bottom 15px
+    .table_row
+      padding 15px 0
+      > .ant-col
+          padding-right 10px
+          wb()
+      .table_title
+        color #333
+        font-weight 700
+        tr()
+        padding-right 20px
+  .detail_total
+    padding-top 20px
+    padding-bottom 10px
+    font-weight 700
+    tr()
+    b
+      padding-right 20px
+    span
+      color #40A9FF
+      &.company
+        padding-right 20px
+  .detail_back_button
+    width 160px
+    height 38px
+    line-height 38px

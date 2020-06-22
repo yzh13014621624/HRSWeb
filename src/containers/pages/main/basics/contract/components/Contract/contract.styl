@@ -1,0 +1,69 @@
+/*
+ * @description: 上传合同和pdf合同组件样式
+ * @author: qiuyang
+ * @lastEditors: qiuyang
+ * @Date: 2020-03-23 13:35:22
+ * @LastEditTime: 2020-04-17 11:51:57
+ * @Copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+.upload_contract_wrapper
+  .ant-card
+    &.contract_button
+      .ant-card-body
+        padding 20px
+    .ant-card-head
+      min-height 50px
+      background:rgba(250,250,250,1);
+      padding 0 20px
+      color #333333
+      font-weight 500
+    .ant-card-body
+      padding 20px
+      padding-bottom 0
+      .upload_btn
+        width: 200px;
+        height: 40px;
+        line-height 40px
+        background: rgba(145,175,200,1);
+        border: 1px solid rgba(124,154,177,1);/*no*/
+        color: #fff;
+      .upload_tips
+        font-size:10px;/*no*/
+        font-weight:400;
+        color:rgba(153,153,153,1);
+        line-height:17px;
+        margin-left 10px;
+      .contract_url,
+      .contract_desc
+        f12()
+        margin-bottom 20px
+        font-family:PingFangSC-Regular,PingFang SC;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+      .contract_url
+        color #40A9FF
+        margin-bottom 10px
+        cursor pointer
+.upload-more-modal-box {
+   padding: 0;
+  .ant-modal-content {
+    .ant-modal-close-x {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      i {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+      }
+    }
+    .ant-modal-close {
+      background: rgba(0,0,0,0.5);
+      border-radius: 0 0 0 50px;
+    }
+  }
+}
+    

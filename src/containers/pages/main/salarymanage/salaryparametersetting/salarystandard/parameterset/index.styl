@@ -1,0 +1,83 @@
+/*
+ * @description: 参数维护---工资标准设置样式文件
+ * @author: yanzihao
+ * @lastEditors: yanzihao
+ * @Date: 2019-09-23 19:59:18
+ * @LastEditTime: 2019-12-11 17:27:37
+ * @Copyright: Copyright  2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+ @import '~@assets/style/mixins'
+.salarystandardfirstset {
+  padding: 20px;
+  .title {
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .action {
+    margin-top: 20px;
+  }
+  .actionbtn {
+    width: 160px;
+    height: 38px;
+    border-radius:5px;
+  }
+  .confirmbtn {
+    background:rgba(64,169,255,1);
+    color:#FFF;
+    margin-right: 20px;
+  }
+  .distableconfirmbtn {
+    background:#dcddde;
+    color:#FFF;
+    margin-right: 20px;
+  }
+  .cancelbtn {
+    bd(rgba(64,169,255,1))
+    color:#40A9FF;
+  }
+  .historysetisunfold {
+    background:rgba(244,250,255,1);
+    border-radius:3px;
+    bd(rgba(140,203,255,1))
+    height: 56px;
+    margin: 20px 0;
+    line-height: 25px;
+    p {
+      text-align: center;
+    }
+    p:nth-child(1) {
+      font-size: 16px;
+      font-weight: 600;
+      color:rgba(64,169,255,1);
+    }
+  }
+  .downorup {
+    width: 17px;
+    cursor: pointer;
+  }
+  .cardmessage {
+    height: 152px;/*no*/
+    background:rgba(255,255,255,1);
+    border-radius: 5px;
+    bd(rgba(232,232,232,1))
+    margin-bottom: 10px;
+    .headertitle {
+      height: 50px; /*no*/
+      line-height: 50px; /*no*/
+      background:rgba(250,250,250,1);
+      font-weight: 600;
+      padding: 0 20px;
+      font-size:14px;
+      span:nth-child(1) {
+        margin-right: 20px;
+      }
+      span:nth-child(2) {
+        color:rgba(153,153,153,1);
+      }
+    }
+  }
+  .ant-input, .ant-input-affix-wrapper {
+    width: 220px !important;
+  }
+}

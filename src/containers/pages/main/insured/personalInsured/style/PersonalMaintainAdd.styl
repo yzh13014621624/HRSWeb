@@ -1,0 +1,71 @@
+/*
+ * @description: 参保管理模块 - 个人参保 - 个人参保维护 新增样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-20 16:18:44
+ * @LastEditTime: 2019-07-30 14:04:10
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#personal_maintain_add
+  padding 10px 40px
+  .ant-select,
+  .ant-input
+    width 220px
+  .detail_content
+    &.ant-card-bordered
+      border none
+      bd-b(#d8d8d8)
+    .ant-card-body
+      padding 30px 0 20px 0
+    .detail_item
+      padding 10px 0
+      &.todo
+        .ant-col
+          color #F5222D
+      .ant-col
+        color #666
+        wb()
+        &:first-child
+          text-align right
+          color #333
+  .detail_title
+    padding-top 30px
+    padding-bottom 20px
+    font-weight 700
+    f14()
+    color #333
+    span
+      color #999
+      f12()
+      padding-left 10px
+  .form_row
+    padding-bottom 20px
+    &:last-child
+      padding-bottom 0
+    .ant-form-item
+      margin-right 0
+      &.ant-form-item-with-help
+        margin-right 0
+        margin-bottom 0
+      > .ant-form-item-label
+        width 145px
+        tr()
+  .ant-form-item
+    margin-bottom 0 !important
+  .ant-form-explain
+    display none !important
+  .time-record
+    padding-bottom 40px
+// 模态框
+.ant-modal
+  .ant-modal-body
+    padding 0.12rem
+  .tips_text
+    color #333
+    tc()
+    margin 0
+  .remove_button_wrapper
+    padding-top 46px
+    tc()

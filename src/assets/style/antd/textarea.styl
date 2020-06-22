@@ -1,0 +1,28 @@
+/*
+ * @description: 多行文本输入框覆盖样式
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-16 15:14:30
+ * @LastEditTime: 2019-04-16 15:35:49
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '../mixins'
+
+.ant_textarea
+  resize none
+  bd(#D9D9D9)
+  border-radius 5px;/*no*/
+  transition all .3s
+  padding 10px
+  line-height normal
+  f12()
+  &:focus
+    border-color #69c0ff
+    outline 0
+    box-shadow 0 0 0 2px rgba(64, 169, 255, 0.2);/*no*/
+  &::-webkit-input-placeholder
+    color #C0C0C0
+  &::-moz-placeholder
+    color #C0C0C0
+  &::-ms-placeholder
+    color #C0C0C0

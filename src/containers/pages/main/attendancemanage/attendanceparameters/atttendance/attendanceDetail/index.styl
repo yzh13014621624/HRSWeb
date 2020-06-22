@@ -1,0 +1,68 @@
+.attendance-detail
+  padding: 20px
+  .detail-label,.attendance-config
+    font-size: 16px;
+    color: #333333
+    font-weight: 500
+  .attendance-config-conten
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .config-tips
+      display: flex
+      align-items: center
+      .icon
+        margin-right: 6px
+        flex-shrink: 0
+  .table-box
+    box-shadow:0px 0px 5px 0px rgba(195,195,195,0.5);
+    border-radius: 8px;
+    .table-row-title-bg
+      background:rgba(250,250,250,1);
+      .table-row-title
+        padding: 20px 10px 14px 0;
+        text-align: left;
+        font-size:14px;/*no*/
+        font-weight:500;
+        color:rgba(51,51,51,1);
+        line-height:20px;
+    .table-body
+      border-left: 1px solid rgba(250,250,250,1);/*no*/
+      border-right: 1px solid rgba(250,250,250,1);/*no*/
+      .table-left-title
+        .left-title-item
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          margin-bottom: 24px;/*no*/
+          height 40px;/*no*/
+          line-height: 40px;/*no*/
+          padding-left: 16px
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          &.required::before
+            display: inline-block;
+            margin-right: 4px;
+            color: #f5222d;
+            font-size: 14px;
+            font-family: SimSun, sans-serif;
+            line-height: 1;
+            content: '*';
+      .table-body-row
+        flex: 1;
+        .tab-columns
+          .rated-attendance
+            height 0.17rem;
+            width: 0.52rem
+          .ant-input-affix-wrapper .ant-input:not(:last-child)
+            padding-right: 27px;
+          .ant-calendar-picker-input
+          .ant-input
+            width: 100px
+  .action-button-group
+    padding: 40px 0 20px 0;
+    .action-button
+      width: 160px
+      height: 38px
+      &:first-child
+        margin-right: 30px

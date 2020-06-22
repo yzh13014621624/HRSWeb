@@ -1,0 +1,149 @@
+/**
+* @author minjie
+* @createTime 2019/04/11
+* @description 参保标准新增的less
+* @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+*/
+base = #F5222D;
+span-first = 98px;
+
+.stand-from {
+  .from-name {
+    margin-bottom: 0;
+    .ant-input-affix-wrapper,
+    input {
+      width: 300px;
+    }
+    .ant-form-explain {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .detail {
+      font-size 14px /*no*/
+    }
+  }
+  .lable {
+    font-size:16px;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:22px;
+  }
+  .label-margin {
+    margin-top: 40px;
+  }
+  .update-time {
+    height:20px;
+    margin-top: 10px;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+    margin-right 60px;
+  }
+  .stand-content {
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 5px 0px rgba(195,195,195,0.5);
+    border-radius:8px;
+    margin-top: 19px;
+    padding-bottom: 18px;
+    .content-header {
+      height:49px;
+      background:rgba(250,250,250,1);
+      font-size:14px;
+      font-weight:500;
+      color:rgba(51,51,51,1);
+      line-height:49px;
+      .ant-col {
+        // width: 140px;
+        > span {
+          color: base;
+          margin: 0 2px;
+        }
+      }
+    }
+    .content-row {
+      width 100%
+      .ant-col {
+        margin-top: 4px;
+      }
+    }
+    .first-span-city,
+    .first-span {
+      text-align: center;
+      p {
+        font-weight:500;
+        color:rgba(51,51,51,1);
+        margin: 14px 0 36px;
+        height:32px;
+        line-height: 32px;
+        > span {
+          color: base;
+          padding: 0 2px;
+        }
+      }
+    }
+    .first-span-city {
+      width: 120px;
+    }
+    .first-span {
+      width: 80px;
+    }
+    .from-item-inline {
+      height: 70px;
+      margin: 0;
+      .ant-form-explain {
+        width: auto;
+      }
+      .has-error {
+        width 300px
+      }
+    }
+    .input-width {
+      position relative
+      .ant-select-selection,
+      .ant-input-affix-wrapper,
+      input,
+      .ant-select {
+        width: 115px;
+        font-size:14px;
+      }
+      .ant-input:not(:last-child) {
+        padding-right 30px
+      }
+      .suffer-span {
+        position absolute
+      }
+    }
+  }
+  .stand-btn button{
+    width: 160px;
+    margin: 0 15px;
+  }
+}
+
+.stand-history {
+  height:56px;
+  background:rgba(244,250,255,1);
+  border-radius:3px;
+  border:1px solid rgba(140,203,255,1);/* no */
+  text-align center;
+  padding 9px 0 7px;
+  .title {
+    font-size:16px;/* no */
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(64,169,255,1);
+    line-height:22px;
+    text-align center;
+    cursor pointer
+  }
+  .icon-up,
+  .icon {
+    width 17px;
+    height 14px;
+    cursor pointer
+  }
+  .icon-up {
+    transform rotate(180deg);
+  }
+}

@@ -1,0 +1,69 @@
+.attendance-table {
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 5px 0px rgba(195,195,195,0.5);
+  border-radius:8px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  .table-col-title,
+  .table-row-title {
+    font-size:14px;/*no*/
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:20px;
+  }
+  .table-row-title,
+  .table-row {
+    padding: 10px 10px 10px 0;
+    text-align: left;
+  }
+  .table-row-title-bg {
+    background:rgba(250,250,250,1);
+  }
+  .table-row-header {
+    background:rgba(137,180,233,1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    .header-check {
+      margin: 10px 0;
+      padding: 0 20px;
+      .create-time {
+        font-size:14px;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height:20px;
+      }
+    }
+    .header-btn {
+      padding-right 15px
+      button{
+        margin: 5px;
+        width: 80px;
+        color: #40A9FF;
+      }
+    }
+  }
+  .table-body {
+    border-left: 1px solid rgba(250,250,250,1);/*no*/
+    border-right: 1px solid rgba(250,250,250,1);/*no*/
+    .table-left-title {
+      .left-title-item {
+        padding: 10px 0 10px 10px;
+        font-weight:500;
+        color:rgba(51,51,51,1);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    .table-body-row {
+      flex: 1;
+      padding: 10px 10px 10px 0;
+      &.holiday-date {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}

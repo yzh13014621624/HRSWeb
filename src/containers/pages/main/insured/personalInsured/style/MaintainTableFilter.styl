@@ -1,0 +1,50 @@
+/*
+ * @description: 参保管理模块 - 个人参保 - 个人参保维护 过滤文件样式
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-20 10:42:27
+ * @LastEditTime: 2020-05-26 17:30:11
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#maintain_table_filter_container
+  .ant-form
+    .ant-form-item
+      width 160px
+      margin-right 20px
+      padding-bottom 10px
+      &.select
+        width 120px
+        margin-right 10px
+        .ant-form-item-control-wrapper
+          width 100%
+      &.date
+        width auto
+        .ant-form-item-label
+          width auto
+        .ant-form-item-control-wrapper
+          width 300px
+        .ant-calendar-picker-input
+          flex-align()
+          .ant-calendar-range-picker-separator
+            height unset
+      &:last-child
+        width 80px
+        margin-right 0px
+      // > div
+      //     width 100%
+      // .ant-select-selection,
+      // .ant-select-selection__rendered,
+      // .ant-form-item-label,
+      // .ant-form-item-control,
+      // .ant-input,
+      // .ant-btn
+      //   height 32px
+      //   line-height 32px
+      // .ant-select
+      //   min-width unset!important
+      // .ant-select-selection--multiple
+      //   min-height unset
+.structure_select
+  min-width 290px !important

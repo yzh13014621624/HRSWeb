@@ -1,0 +1,21 @@
+/*
+ * @description: antd-datepicker 样式覆盖文件: 默认宽度为 220/192 rem，高度为 32/192 rem
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-26 17:25:07
+ * @LastEditTime: 2019-09-27 10:44:07
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '../mixins'
+
+.ant-calendar-picker
+  // min-width 220px
+  &.picker-100
+    width 100px
+  &.picker-120
+    width 120px
+  &.unset
+    width auto
+    min-width unset
+  .ant-calendar-picker-input
+    height 32px

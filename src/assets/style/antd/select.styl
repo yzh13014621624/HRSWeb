@@ -1,0 +1,46 @@
+/*
+ * @description: antd-select 样式覆盖文件: 默认宽度为 220/192 rem，高度为 32/192 rem
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-26 17:14:37
+ * @LastEditTime: 2019-05-14 14:29:57
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '../mixins'
+
+.ant-select
+  width 220px
+  .ant-select-selection
+    height 32px
+    .ant-select-selection__rendered
+      line-height 32px
+  .ant-select-selection--multiple
+    min-height unset
+
+// .ant-select-selection--multiple > ul > li
+//   margin-top: 0px;
+
+/* 法人主体显示不全 */
+.custom-select-width
+  .ant-select-dropdown[style]
+    min-width 200px
+    width auto !important
+    .ant-select-dropdown-menu
+      .ant-select-dropdown-menu-item
+        width max-content
+
+.custom-select
+  .ant-select-dropdown[style]
+    min-width 115px
+    width auto !important
+    .ant-select-dropdown-menu
+      .ant-select-dropdown-menu-item
+        width max-content
+
+/* 组织显示不全 */
+.custom-select-width-o {
+  .ant-select-dropdown[style] {
+    min-width 200px
+    width 400px !important;
+  }
+}

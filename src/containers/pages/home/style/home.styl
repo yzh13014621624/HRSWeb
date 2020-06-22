@@ -1,0 +1,193 @@
+/**
+ * @author minjie
+ * @createTime 2019/04/03
+ * @description 主界面样式
+ * @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+
+ active-color = rgb(255, 217, 110)
+
+.home {
+  height: 100%;
+  .home-silder {
+    color: 'white';
+    font-size: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // padding-bottom: 20px;
+    .ant-menu-sub,
+    .ant-menu {
+      border: none;
+      background: rgba(0, 0, 0, 0);
+      color: #fff;
+      .ant-menu-item {
+        background: rgba(0, 0, 0, 0);
+        margin: 0;
+      }
+      .ant-menu-item:hover {
+        background-color: rgba(0,0,0,0.1);
+      }
+      .ant-menu-item::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: none;
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+        content: '';
+        color:rgba(255,217,110,1);
+      }
+      .ant-menu-submenu-open {
+        background:rgba(0,0,0,0.05);
+        .ant-menu-item-selected {
+          border-left: 0px solid active-color;/*no*/
+        }
+      }
+      .ant-menu-submenu-title {
+        margin 0;
+      }
+      .ant-menu-item-selected,
+      .ant-menu-submenu-active,
+      .ant-menu-item-active  {
+        font-size:12px;/*no*/
+        font-weight:500;
+        color:active-color;
+        background:rgba(0,0,0,0.1);
+        .ant-menu-submenu-title .ant-menu-submenu-arrow,
+        .ant-menu-submenu-title:hover {
+          color: active-color;
+        }
+      }
+      .ant-menu-item-selected,
+      .ant-menu-submenu-selected  .ant-menu-submenu-title {
+        border-left: 5px solid active-color;/*no*/
+      }
+    }
+    .ant-menu-inline-collapsed {
+      width: 60px;
+      .ant-menu-submenu > .ant-menu-submenu-title,
+      .ant-menu-item {
+        padding: 0 0 0 18px !important;
+      }
+    }
+
+    .ant-menu-submenu-popup {
+      background: rgba(0,0,0,0.1);
+      .ant-menu-item-active {
+        color:active-color;
+        background:rgba(0,0,0,0.1);
+      }
+    }
+    .icon {
+      height:64px;
+      padding: 15px 25px;
+      background:linear-gradient(145deg, #40B6E2 0%,#4791E2 100%);
+      span {
+        width:113px;
+        height:33px;
+        font-size:24px;
+        font-weight:600;
+        color:rgba(255,255,255,1);
+        line-height:33px;
+      }
+    }
+    .active {
+      padding: 16px 0;
+      cursor: pointer;
+      text-align: center;
+      font-size:24px;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+      line-height:33px;
+    }
+  }
+
+  .home-center-header {
+    height:64px;
+    width: 100%;
+    line-height: 64px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.06);
+    padding: 0;
+    position: fixed;
+    z-index 999
+    .icon {
+      z-index: 1000;
+      display: inline-block;
+      width: 60px;
+      height: 64px;
+      line-height: 64px;
+      padding: 4px 16px 0;
+      cursor: pointer;
+      .home-header-cion {
+        font-size: 24px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .active:hover {
+      cursor: pointer;
+      background: #F6F6F6;
+    }
+    .user {
+      display: inline-block;
+      height: 64px;
+      position: fixed;
+      right: 20px;
+      z-index: 1000;
+      .user-col {
+        cursor: pointer;
+        margin-left: 20px;
+        padding: 0 10px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+  .page-header {
+    height:50px;/*no*/
+    line-height: 50px;/*no*/
+    padding: 0 20px;
+    background:rgba(255,255,255,1);
+    margin-top: 2px;
+  }
+  .taskmanage {
+    cursor: pointer;
+    .taskmanageicon {
+      width: 22px;
+      height: 22px;
+    }
+    .taskbackground {
+      text-align: center;
+      width: 16px;/*no*/
+      height: 16px;/*no*/
+      line-height: 16px;/*no*/
+      color: #fff;
+      background-color: red;
+      display: inline-block;
+      border-radius: 50%;
+      position: relative;
+      top: -10px;/*no*/
+      left: 0;
+      .tasknum {
+        display: inline-block;
+        font-size: 12px;
+        transform:scale(0.7)
+      }
+      .tasknum_l {
+        display: inline-block;
+        font-size: 12px;
+        transform:scale(0.7)
+        margin-left: -3px;/*no*/
+      }
+    }
+  }
+}
+
+.active-span {
+  cursor pointer
+}

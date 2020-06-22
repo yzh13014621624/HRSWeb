@@ -1,0 +1,95 @@
+/**
+ * @author minjie
+ * @createTime 2019/04/01
+ * @description 多文件上传的 less
+ * @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+
+ .upload-more-img-content{
+   padding: 0px 0px 20px 0px;
+ }
+ .img-content {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-right: 40px;
+  margin-top: 20px;
+  width:150px;
+  height:212px;
+  box-sizing: border-box;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 5px 0px rgba(190,190,190,0.5);
+  border-radius:5px;
+  border:1px solid rgba(229,229,229,1);/*no*/
+  padding: 6px 4px;
+  .pdf_container {
+    width 100%;
+    height 100%;
+    overflow hidden
+    > div {
+      width 100%;
+      height 100%;
+      overflow hidden
+    }
+    canvas {
+      width 100% !important;
+      height 100% !important;
+    }
+  }
+  .content-img {
+    display: inline-block;
+    box-sizing: border-box;
+    width:138px;
+    height:197px;
+  }
+  .img-content-dialog {
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    width:138px;
+    height:197px;
+    top:7px;
+    text-align: center;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+    .content-icon {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+ }
+ .img-content:hover {
+  cursor: pointer;
+  .img-content-dialog {
+    display: block;
+    position: absolute;
+    top:7px;
+  }
+ }
+
+
+ .upload-more-modal-box {
+   padding: 0;
+  .ant-modal-content {
+    .ant-modal-close-x {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      i {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+      }
+    }
+    .ant-modal-close {
+      background: rgba(0,0,0,0.5);
+      border-radius: 0 0 0 50px;
+    }
+  }
+}

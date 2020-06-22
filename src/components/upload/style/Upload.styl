@@ -1,0 +1,148 @@
+/**
+ * @author minjie
+ * @createTime 2019/04/01
+ * @description 加载动画
+ * @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+
+.upload-image-content {
+  display: inline-block;
+  position: relative;
+  background-clip: padding-box;
+  min-height: 28px;
+  border-radius: 5px;
+  background:rgba(242,246,252,1);
+  border-radius:10px;
+  box-sizing: border-box;
+  border:1px dashed rgba(209,217,237,1);/*no*/
+  cursor: pointer;
+  .content-span {
+    box-sizing: border-box;
+    width: 99%;
+    height: 99%;
+    padding: 38px 0;
+    background:rgba(242,246,252,1);
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    .text-content {
+      margin: 0 auto;
+      span {
+        display: block;
+      }
+      span:nth-child(2) {
+        margin-top: 10px;
+        font-size:14px;
+        font-weight:400;
+        color:rgba(15,62,115,1);
+        line-height:20px;
+      }
+      span:nth-child(3) {
+        font-size:12px;
+        font-weight:400;
+        color:#999999;
+        line-height:20px;
+      }
+    }
+  }
+  .content-span:hover {
+    border: none;
+  }
+  .content-span-cet {
+    padding: 24px 0 !important;
+    background:#fff;
+  }
+  .upload-btn {
+    outline:none;
+  }
+  .content-after {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius:10px;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    img {
+      position: absolute;
+      z-index: 1;
+      top:0;
+      left:0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius:10px;
+      outline:none;
+    }
+    p {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      z-index: 2;
+      left:0;
+      bottom: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background:rgba(0,0,0,0.5);
+      span {
+        position: absolute;
+        width: 50%;
+        height: 30px;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        font-size:14px;/**/
+        font-weight:400;
+        color:rgba(255,255,255,1);
+      }
+      span:nth-child(1) {
+        left:0;
+        border-right:1px solid rgba(255,255,255,1);/*no*/
+      }
+      span:nth-child(2) {
+        right:0;
+      }
+      span:hover {
+        cursor: pointer;
+        color: #1890ff;
+      }
+    }
+  }
+}
+.upload-image-content:hover {
+  border:1px dashed #1890ff;/*no*/
+}
+
+/* 文件上传的 start */
+
+.upload-file-content {
+  display: inline-block;
+}
+
+.upload-progress {
+  width:100%;
+  height:232px;
+  background:rgba(255,255,255,1);
+  border-radius:5px;
+  text-align center
+  padding 56px 0
+  > p {
+    height:22px;
+    font-size:16px;/*no*/
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:22px;
+    margin-bottom 68px
+  }
+}
+
+/* 文件上传的 end */
+
+/* 文件下载的 start */
+.cus-dowload {
+  display inline-block
+}
+/* 文件下载的 end */

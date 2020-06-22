@@ -1,0 +1,127 @@
+/*
+ * @description: 异动新增/编辑样式文件
+ * @author: huxianghe
+ * @Date: 2019-04-03 18:46:40
+ * @lastEditors: huxianghe
+ * @LastEditTime: 2020-05-19 14:39:29
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#add_job_change
+  padding 40px
+  .edit_content
+    display flex
+    padding-bottom 40px
+    > div
+      & + div
+        margin-left 60px
+    .ant-card
+      box-shadow 0px 0px 6px 0px rgba(203, 203, 203, .5)
+      border-radius 10px
+    .ant-card-body,
+    .sj_salary
+      padding 20px
+      padding-bottom 0px
+      > .ant-row
+        display flex
+        align-items center
+        color #333
+        padding-left 40px
+        padding-bottom 20px
+        &.last_child
+          padding-bottom 12px
+        label
+          min-width 112px
+          text-align right
+        .txt
+          padding-left 10px
+          color #666
+      .sj_salary
+        padding 0
+        padding-bottom 0
+    .card_title
+      display flex
+      align-items center
+      justify-content center
+      padding-bottom 20px
+      font-size 13px;/*no*/
+      color #333333
+      margin 0
+      .icon
+        width 20px
+        height 20px
+        background url('~@assets/images/share/entry/per8.png')
+        background-size contain
+        margin-right 6px
+        font-weight 500
+  .form_item
+    padding-left 40px
+    padding-bottom 0px!important
+    margin-bottom 8px
+    margin-right  0
+    align-items flex-start!important
+    .publicsearchselect
+      width 100%
+    &.item_margin_left_20
+      margin-left -10px /*no*/
+    .ant-form-item-label
+      line-height 32px
+      min-width 122px
+      text-align right
+    .ant-form-item-control-wrapper
+      width 220px
+      margin-left 2px
+      .ant-input,
+      .ant-form-item-control,
+      .ant-select-selection,
+      .ant-select-selection-selected-value,
+      .ant-select-selection__rendered
+        line-height 32px
+        height 32px
+    .ant-calendar-picker
+      width 100%
+    .ant-form-explain
+      display none
+    .ant-select-selection--multiple
+      min-height unset
+  /* 下拉框样式覆盖 */
+  .ant-select-dropdown
+    .ant-select-dropdown-menu
+      .ant-select-dropdown-menu-item
+        color #333333
+        font-weight 400
+  .button_wrapper
+    .confirm_button,
+    .cancel_button
+      width 160px
+      height 38px
+      line-height 38px
+    .cancel_button
+      border-color #40A9FF
+      color #40A9FF
+      margin-left 30px
+  p
+    margin 0
+  .upload_pic
+    padding-left 40px
+    .upload_button
+      // width 334px
+      width 1.80rem
+      height 38px
+      background #94AEC2
+      bd(#A5BDD2)
+      color #fff
+      margin-top 12px
+      margin-bottom 10px
+    .tip
+      color #999
+      f10()
+.ant-modal
+  .tips_text
+    color #333
+    tc()
+    margin 0
+  .remove_button_wrapper
+    padding-top 46px
+    tc()

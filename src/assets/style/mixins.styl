@@ -1,0 +1,83 @@
+/*
+ * @description: 样式混入文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-09 10:27:24
+ * @LastEditTime: 2019-09-23 15:08:12
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import './variable.styl'
+
+// border style
+bd(color = $color-theme, width = 1px)
+  border width solid color;/*no*/
+bd-t(color = $color-theme, width = 1px)
+  border-top width solid color;/*no*/
+bd-b(color = $color-theme, width = 1px)
+  border-bottom width solid color;/*no*/
+bd-r(color, width = 1px)
+  border-right width solid color;/*no*/
+bd-l(color, width = 1px)
+  border-left width solid color;/*no*/
+
+border-radius(num)
+  border-radius num
+  overflow hidden
+
+// font-size style
+f10()
+  font-size 10px;/*no*/
+f12()
+  font-size 12px;/*no*/
+f14()
+  font-size 14px;/*no*/
+f16()
+  font-size 16px;/*no*/
+f18()
+  font-size 18px;/*no*/
+fz(size)
+  font-size size
+
+// flex grid
+flex-f()
+  display flex
+flex-align()
+  flex-f()
+  align-items center
+flex-between()
+  flex-f()
+  justify-content space-between
+flex-align-center()
+  flex-align()
+  justify-content center
+flex-align-between()
+  flex-between()
+  align-items center
+flex-col()
+  flex-f()
+  flex-direction column
+flex-col-between()
+  flex-col()
+  justify-content space-between
+
+tc()
+  text-align center
+tr()
+  text-align right
+
+text-over(num)
+  overflow hidden
+  text-overflow ellipsis
+  display -webkit-box
+  -webkit-line-clamp num
+  -webkit-box-orient vertical
+  word-break break-all
+
+wb()
+  white-space normal
+  word-wrap break-word
+  word-break break-all
+
+wh(val)
+  width val
+  height val

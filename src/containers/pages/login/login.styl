@@ -1,0 +1,129 @@
+/**
+ * @author minjie
+ * @createTime 2019/04/03
+ * @description 登录界面(less)
+ * @copyright Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+.content-div {
+  height 100%
+  background linear-gradient(to bottom left, #32CEDE, #41A0FA)
+  .rightTopLogo {
+    position: fixed;
+    z-index: 999999;
+    top: 58px;/*no*/
+    right: 48px;/*no*/
+  }
+  .login-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+    background-size: '1920px 1024px';/*no*/
+    .login-card {
+      display: flex;
+      width:850px;/*no*/
+      height:490px;/*no*/
+      border-radius:20px;/*no*/
+      background-size:  100% 100%;
+      box-shadow:0px 0px 12px 0px rgba(0,0,0,0.15);/*no*/
+      overflow: hidden;
+      padding: 15px;/*no*/
+      background-color:rgba(255,255,255,1);
+      .login {
+        // padding: 48px 0 0 40px;/*no*/
+        border-radius:20px;/*no*/
+        width 423px;/*no*/
+        height 460px;/*no*/
+        .card-header {
+          text-align: center
+          height:40px;/*no*/
+          font-size:28px;/*no*/
+          font-weight:400;
+          color:rgba(51,51,51,1);
+          line-height:40px;/*no*/
+          margin 20px 0;/*no*/
+        }
+        .line-height {
+          margin 20px 0;/*no*/
+        }
+        .login-error {
+          margin: 14px 0 4px;/*no*/
+          height:28px;/*no*/
+          width: 300px;/*no*/
+          text-align: center;
+          background:rgba(255,251,230,1);
+          font-size:14px;/*no*/
+          font-weight:400;
+          color:rgba(245,34,45,1);
+          line-height:28px;/*no*/
+        }
+        .login-form {
+          // text-align: center
+          // width: 300px;/*no*/
+          .form-item {
+            margin-bottom: 15px;/*no*/
+            button,
+            input {
+              width 100%;
+              height:42px;/*no*/
+              font-size:14px;/*no*/
+              font-weight:400;
+              line-height:20px;/*no*/
+            }
+            button {
+              height:42px;/*no*/
+              font-size:16px;/*no*/
+              font-weight:500;
+              color:rgba(255,255,255,1);
+              line-height:22px;/*no*/
+            }
+            .ant-checkbox {
+              font-size:14px;/*no*/
+              font-weight:400;
+              color:rgba(102,102,102,1);
+              line-height:20px;/*no*/
+              input {
+                height:15px;/*no*/
+              }
+              > span {
+                height:15px;/*no*/
+                width: 15px;/*no*/
+              }
+            }
+          }
+          .form-item-code {
+            .ant-input-suffix {
+              right: 0;
+              > i, > canvas {
+                line-height 42px;
+              }
+            }
+            input {
+              padding-right: 100px;/*no*/
+            }
+            .img-code {
+              width: 86px;/*no*/
+              height: 32px;/*no*/
+              margin-left 4px;
+              margin-right 2px;
+              cursor: pointer;
+            }
+            .canvas-code {
+              width: 86px;/*no*/
+              height: 32px;/*no*/
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .login-welcome {
+        width 423px;/*no*/
+        height 460px;/*no*/
+        flex: 1;
+        position relative
+      }
+    }
+  }
+}

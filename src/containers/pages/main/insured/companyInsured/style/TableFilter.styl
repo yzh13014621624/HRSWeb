@@ -1,0 +1,40 @@
+/*
+ * @description: TableFilter 组件样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-11 10:45:10
+ * @LastEditTime: 2019-04-26 16:20:23
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#company_pay_table_filter_container
+  .ant-form
+    .ant-form-item
+      width 220px
+      margin-right 20px
+      padding-bottom 20px
+      &:first-child
+        width unset
+        margin-right 10px
+        .ant-form-item-label
+          width unset
+        .ant-form-item-control-wrapper
+          width 400px
+        .ant-calendar-picker-input
+          flex-align()
+          .ant-calendar-range-picker-separator
+            height unset
+      &:last-child
+        width 80px
+        margin-right 0px
+      div
+        width 100%
+      .ant-select-selection,
+      .ant-select-selection__rendered,
+      .ant-form-item-label,
+      .ant-form-item-control,
+      .ant-input,
+      .ant-btn
+        height 32px
+        line-height 32px

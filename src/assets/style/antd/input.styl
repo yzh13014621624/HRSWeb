@@ -1,0 +1,63 @@
+/*
+ * @description: antd-input 样式覆盖文件: 默认宽度为 220/192 rem，高度为 32/192 rem
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-12 15:23:29
+ * @LastEditTime: 2019-09-26 14:02:17
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '../mixins'
+
+input
+  &.ant-input
+    width 220px
+    height 32px
+  &.unset
+    width auto
+  &.input-120
+    width 120px
+  &.input-150
+    width 150px
+  &.input-180
+    width 180px
+   &.input-220
+    width 220px
+
+// 嵌套在 Form 表单中样式同步
+.ant-form-item
+  .input-100
+    width 100px
+  .input-110
+    width 110px
+  .input-120
+    width 120px
+  .input-130
+    width 130px
+  .input-140
+    width 140px
+  .input-150
+    width 150px
+  .input-160
+    width 160px
+  .input-180
+    width 180px
+  .input-220
+    width 220px
+  .input-100,
+  .input-110,
+  .input-120,
+  .input-130,
+  .input-140,
+  .input-150,
+  .input-160,
+  .input-180,
+  .input-220
+    input
+      width 100%
+
+input[type=number]
+  -moz-appearance textfield
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance none
+  margin 0

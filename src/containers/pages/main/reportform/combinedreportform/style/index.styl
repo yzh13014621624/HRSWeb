@@ -1,0 +1,74 @@
+/*
+ * @description:  报表中心 - 新建组合报表 样式文件
+ * @author: huxianghe
+ * @lastEditors: huxianghe
+ * @Date: 2019-04-23 17:57:03
+ * @LastEditTime: 2019-05-22 14:00:35
+ * @copyright: Copyright © 2019 Shanghai Yejia Digital Technology Co., Ltd. All rights reserved.
+ */
+@import '~@assets/style/mixins'
+
+#combined_reportform_container
+  background-color #f0f2f5
+  .ant-card
+    &:first-child
+      margin-bottom 10px
+    .ant-card-body
+      padding 20px
+  #report_form
+    .reportform_name
+      f13()
+      color #666
+      font-weight 500
+      padding-bottom 10px
+    .form_item_container
+      padding 10px 0
+      bd-b(#E8E8E8)
+      .label_name
+        color #333333
+        font-weight 700
+        &.select,
+        &.date
+          padding-bottom 5px
+        span
+          color #F5222D
+      .form_item_wrapper
+        padding-left 10px
+        &.project
+          .ant-checkbox-wrapper
+            width 150px
+        &.entity,
+        &.organize
+          .ant-checkbox-wrapper
+            width 380px
+        &.organize
+          padding 8px 0 8px 12px
+          .ant-select-selection
+            padding-bottom 0
+        &.select,
+        &.date
+          padding-left 14px
+        .ant-checkbox-wrapper
+          padding 8px 0
+          > span
+            &:last-child
+              padding-left 2px;/*no*/
+    .button_wrapper
+      padding-top 20px
+.ant-modal
+  .report_form_name
+    position relative
+    width 300px
+    margin 0 auto
+    input
+      &.modal_input
+        width 100%
+      &.error
+        bd(#F5222D)
+    .error_tips
+      position absolute
+      left 0
+      bottom -25px
+      color #F5222D
+  .report_form_modal_button_wrapper
+    padding-top 40px
